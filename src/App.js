@@ -15,6 +15,8 @@ import Maindashboard from './components/dashboard/maindash/Maindashboard';
 import Notfound from './pages/Notfound/Notfound';
 import Calculators from './pages/calculators/Calculators';
 import Register from './pages/register/Register';
+import Userprofile from './components/dashboard/user-profile/Userprofile';
+import UpdateProfile from './components/dashboard/user-profile/UpdateProfile';
 
 function App() {
   return (
@@ -25,11 +27,13 @@ function App() {
             <Route path='/' element={<Maindashboard />}></Route>
             <Route path='/patients' element={<Patients />}></Route>
             <Route path='/review' element={<Review />}></Route>
-            <Route path='/profile' element={<Profile />}></Route>
+            <Route path='/doctors' element={<Profile />}></Route>
             <Route path='/appointment' element={<Appointment />}></Route>
+            <Route path='/calculators' element={<Calculators />}></Route>
+            <Route path='/profile' element={<Userprofile />}></Route>
+            <Route path='/update-profile' element={<UpdateProfile />}></Route>
           </Route>
         </Route>
-        <Route path='/calculators' element={<Calculators />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='*' element={<Notfound />}></Route>

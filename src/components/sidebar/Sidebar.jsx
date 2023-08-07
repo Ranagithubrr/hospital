@@ -30,7 +30,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li className='flex  hover:bg-slate-200 rounded'>
-                    <Link to='/profile' className='h-full w-full  py-4 px-2 block'>
+                    <Link to='/doctors' className='h-full w-full  py-4 px-2 block'>
                         <span className='flex items-center text-base'><FaUsers className='text-xl'/>  <span className='pl-3 h-full text-sm font-semibold'>Doctors Profile</span></span>
                     </Link>
                 </li>

@@ -5,7 +5,7 @@ import Bmi from './Bmi';
 const Calculators = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className='flex flex-wrap m-5'>
                 <div className='w-1/3'>
                     <Bmi />

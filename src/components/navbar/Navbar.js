@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineHome, AiOutlineSchedule } from 'react-icons/ai';
 import { MdOutlineTimer } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
@@ -8,6 +8,33 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [rightSidebar, setRightSidebar] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check if the user's dark mode preference is stored in local storage
+    const isDarkMode = localStorage.getItem('darkMode');
+    if (isDarkMode) {
+      setDarkMode(JSON.parse(isDarkMode));
+    }
+  }, []);
+
+  const handleToggleDarkMode = () => {
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      // Store the user's dark mode preference in local storage
+      localStorage.setItem('darkMode', JSON.stringify(newMode));
+      return newMode;
+    });
+  };
+
+  useEffect(() => {
+    // Set the 'dark' class on the body tag based on the dark mode state
+    if (darkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [darkMode]);
     return (
         <>
             <div class="flex px-6 py-5 items-center shadow-md sticky top-0 z-10 bg-white">
@@ -38,7 +65,8 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div class="w-2/12 flex justify-end">
+                <div class="w-2/12 flex justify-end items-center">
+                    <span className='font-semibold text-sm mr-2'>Role: Admin</span>
                     <span className='
                     h-8 
                     w-8 
@@ -68,13 +96,12 @@ const Navbar = () => {
                         <span className='px-1 text-1xl'><AiOutlineUser /></span>
                     </span>
                 </div>
-                <div className={`fixed bg-white ${!rightSidebar ? '-right-full' : 'right-0'}  top-0 h-full w-2/12 z-20 transition-all duration-300 pl-5 pt-5 ease-in-out`}>
-                    <span className="text-3xl font-bold">Me<span className="text-blue-900">Doc</span></span>
+                <div className={`fixed bg-white dark:bg-gray-700 ${!rightSidebar ? '-right-full' : 'right-0'}  top-0 h-full w-2/12 z-20 transition-all duration-300 pl-5 pt-5 ease-in-out`}>
+                    <span className="text-3xl font-bold dark:text-gray-400">Me<span className="text-blue-900 dark:text-gray-300">Doc</span></span>
                     <div className='pt-3'>
-                        <span className='text-xs font-bold'>Theme</span>
+                        <span className='text-xs font-bold dark:text-gray-300'>Theme : {darkMode ? 'Dark' : 'Light'}</span>
                         <div className='flex pr-5 justify-between mt-5'>
-                            <button className='bg-blue-900 text-lime-50 px-5 py-1 rounded cursor-pointer'>Light</button>
-                            <button className='bg-blue-900 text-lime-50 px-5 py-1 rounded cursor-pointer'>Dark</button>
+                            <button className='bg-blue-900  text-lime-50 dark:bg-gray-200 dark:text-gray-800 px-5 py-1 rounded cursor-pointer w-full' onClick={handleToggleDarkMode}>Switch Theme</button>                            
                         </div>
                     </div>
                 </div>

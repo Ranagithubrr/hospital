@@ -5,10 +5,10 @@ const Bmi = () => {
     const [feet,setFeet] = useState(0);
     const [inches,setInches] = useState(0);
     const [weight,setWeight] = useState(0); 
-    let [BMI,setBMI] = useState(0);
+    const [BMI,setBMI] = useState(0);
 
     const CalculateBmi = () =>{      
-        if(feet === 0 || inches === 0 || weight === 0)     {
+        if(feet === 0 || weight === 0)     {
             window.alert("please fill all the input field");
             return;
         }
@@ -28,7 +28,7 @@ const Bmi = () => {
         setBMI(0);
     }
     return (
-        <div className='border p-3'>
+        <div className='border p-3 shadow'>
             <h5 className='text-center font-bold text-gray-600'>Check Your BMI</h5>
             <div className='w-3/5 m-auto'>
                 <span className='font-semibold text-sm text-gray-600 block'>Your Height</span>
@@ -48,7 +48,7 @@ const Bmi = () => {
                     {
                         BMI > 25 ? <span className='text-sm font-semibold text-red-500'>Opps You are overweight </span> : BMI > 18.4 ? <span className='text-sm font-semibold text-green-500'>Congratulations You are in Perfect Shape </span> : <span className='text-sm font-semibold text-red-400'>Oops Your're underweight</span>
                     }
-                    <span className='text-sm font-semibold text-green-500'>Congratulations You are in Perfect Shape </span>
+                    {/* <span className='text-sm font-semibold text-green-500'>Congratulations You are in Perfect Shape </span> */}
                 </div>
                 }
 
