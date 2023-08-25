@@ -4,6 +4,7 @@ import { MdOutlineTimer } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import { AiOutlineSetting, AiOutlineUser } from 'react-icons/ai';
 import { FaCalculator } from 'react-icons/fa';
+import { IoMdNotificationsOutline } from 'react-icons/io';
 import {Link} from 'react-router-dom'
 
 const Navbar = () => {
@@ -37,28 +38,28 @@ const Navbar = () => {
   }, [darkMode]);
     return (
         <>
-            <div class="flex px-6 py-5 items-center shadow-md sticky top-0 z-10 bg-white">
+            <div class="flex px-6 py-5 items-center shadow-md sticky top-0 z-10 bg-white dark:bg-gray-800">
                 <div class="w-4/12">
-                    <span className="text-3xl font-bold">Me<span className="text-blue-900">Doc</span></span>
+                    <span className="text-3xl font-bold dark:text-gray-300">Me<span className="text-blue-900 dark:text-blue-500">Doc</span></span>
                 </div>
                 <div class="w-6/12">
                     <ul className='flex'>
-                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900  mx-2 pb-3 font-semibold text-blue-950   '>
+                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900 dark:hover:border-gray-300  mx-2 pb-3 font-semibold text-blue-950 dark:text-gray-200   '>
                             <Link to="/" className='text-3xl'>
                                 <AiOutlineHome />
                             </Link>
                         </li>
-                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900  mx-2 pb-3 font-semibold text-blue-950   '>
+                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900 dark:hover:border-gray-300  mx-2 pb-3 font-semibold text-blue-950 dark:text-gray-200   '>
                             <Link to="/calculators" className='text-3xl'>
                                 <FaCalculator />
                             </Link>
                         </li>
-                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900  mx-2 pb-3 font-semibold text-blue-950   '>
-                            <Link to="/" className='text-3xl'>
-                                <MdOutlineTimer />
+                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900 dark:hover:border-gray-300  mx-2 pb-3 font-semibold text-blue-950 dark:text-gray-200   '>
+                            <Link to="/notifications" className='text-3xl'>
+                                <IoMdNotificationsOutline />
                             </Link>
                         </li>
-                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900  mx-2 pb-3 font-semibold text-blue-950   '>
+                        <li className='px-7 border-b-4 border-transparent hover:border-blue-900 dark:hover:border-gray-300  mx-2 pb-3 font-semibold text-blue-950 dark:text-gray-200   '>
                             <Link to="/profile" className='text-3xl'>
                                 <CgProfile />
                             </Link>
@@ -66,13 +67,14 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div class="w-2/12 flex justify-end items-center">
-                    <span className='font-semibold text-sm mr-2'>Role: Admin</span>
+                    <span className='font-semibold text-sm mr-2 dark:text-gray-300'>Role: Admin</span>
                     <span className='
                     h-8 
                     w-8 
                     flex                      
                     justify-center 
                     bg-blue-900 mx-2 
+                    dark:bg-blue-600
                     text-white 
                     rounded-full
                     items-center
@@ -88,6 +90,7 @@ const Navbar = () => {
                     flex                      
                     justify-center 
                     bg-blue-900 mx-2 
+                    dark:bg-blue-600
                     text-white 
                     rounded-full
                     items-center

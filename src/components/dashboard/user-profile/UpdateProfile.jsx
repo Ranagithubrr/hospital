@@ -35,7 +35,8 @@ const UpdateProfile = () => {
                             <span className='font-semibold text-gray-600'>Email</span>
                         </div>
                         <div className='w-3/4'>
-                            <input className='text-gray-600 font-semibold outline-none border-b-2' placeholder='ranarr.dev@gmail.com'></input>
+                            <input className='text-gray-600 font-semibold outline-none border-b-2' placeholder='ranarr.dev@gmail.com' disabled></input>
+                            <span className='block text-xs  my-2 p-1 w-2/3 rounded text-red-600 font-bold'>Email is not changable</span>
                         </div>
                     </div>
                     <div className='flex justify-between w-1/2'>
