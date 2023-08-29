@@ -111,17 +111,76 @@ const Maindashboard = () => {
                 <div className='border p-2 rounded-sm '>
                     <h5 className='font-semibold pl-2'>Top Doctors</h5>
                     <ul className='mt-3 sticky top-32'>
-                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
-                        <li className='flex my-2 bg-gray-200 rounded py-1 px-3'><a href="#" className='flex items-center no-underline w-full h-full'><img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" /> <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span></a></li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
+                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                                <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
+                                <div>
+
+                                    <span className='pl-2 text-sm font-semibold text-gray-700'>Dr Abraham Ehsan</span>
+                                    <span className='block text-xs pl-2 font-semibold text-gray-600'>Heart Surgeon</span>
+                                </div>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>

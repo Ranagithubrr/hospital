@@ -18,6 +18,7 @@ import Register from './pages/register/Register';
 import Userprofile from './components/dashboard/user-profile/Userprofile';
 import UpdateProfile from './components/dashboard/user-profile/UpdateProfile';
 import Notifications from './pages/Notifications/Notifications';
+import Getappointment from './components/getappointment/Getappointment';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/review' element={<Review />}></Route>
             <Route path='/doctors' element={<Profile />}></Route>
             <Route path='/appointment' element={<Appointment />}></Route>
+            <Route path='/get-appointment' element={<Getappointment />}></Route>
             <Route path='/calculators' element={<Calculators />}></Route>
             <Route path='/notifications' element={<Notifications />}></Route>
             <Route path='/profile' element={<Userprofile />}></Route>

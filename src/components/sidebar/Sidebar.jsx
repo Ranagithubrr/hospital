@@ -23,12 +23,7 @@ const Sidebar = () => {
                     <Link to='/appointment' className='h-full w-full  py-4 px-2 block'>
                         <span className='flex items-center text-base dark:text-gray-300'><BsCalendarDate className='text-xl'/>  <span className='pl-3 h-full text-sm font-semibold'>Appointment</span></span>
                     </Link>
-                </li>
-                <li className='flex  hover:bg-slate-200 rounded dark:hover:bg-gray-700'>
-                    <Link to='/schedule' className='h-full w-full  py-4 px-2 block'>
-                        <span className='flex items-center text-base dark:text-gray-300'><AiOutlineSchedule className='text-xl'/>  <span className='pl-3 h-full text-sm font-semibold'>Schedule</span></span>
-                    </Link>
-                </li>
+                </li>               
                 <li className='flex  hover:bg-slate-200 rounded dark:hover:bg-gray-700'>
                     <Link to='/doctors' className='h-full w-full  py-4 px-2 block'>
                         <span className='flex items-center text-base dark:text-gray-300'><FaUsers className='text-xl'/>  <span className='pl-3 h-full text-sm font-semibold'>Doctors Profile</span></span>
