@@ -19,6 +19,9 @@ import Userprofile from './components/dashboard/user-profile/Userprofile';
 import UpdateProfile from './components/dashboard/user-profile/UpdateProfile';
 import Notifications from './pages/Notifications/Notifications';
 import Getappointment from './components/getappointment/Getappointment';
+import Hospitalsurvey from './pages/Hospital-Survey/Hospitalsurvey';
+import Accountreview from './pages/Accounts-Review/Accountreview';
+import Earnings from './pages/Earnings/Earnings';
 
 function App() {
   return (
@@ -28,14 +31,17 @@ function App() {
           <Route path='/' element={<Dashboard />}>
             <Route path='/' element={<Maindashboard />}></Route>
             <Route path='/patients' element={<Patients />}></Route>
+            <Route path='/accounts-review' element={<Accountreview />}></Route>
             <Route path='/review' element={<Review />}></Route>
             <Route path='/doctors' element={<Profile />}></Route>
             <Route path='/appointment' element={<Appointment />}></Route>
+            <Route path='/earnings' element={<Earnings />}></Route>
             <Route path='/get-appointment' element={<Getappointment />}></Route>
             <Route path='/calculators' element={<Calculators />}></Route>
             <Route path='/notifications' element={<Notifications />}></Route>
             <Route path='/profile' element={<Userprofile />}></Route>
             <Route path='/update-profile' element={<UpdateProfile />}></Route>
+            <Route path='/hospital-survey' element={<Hospitalsurvey />}></Route>
           </Route>
         </Route>
         <Route path='/login' element={<Login />}></Route>
