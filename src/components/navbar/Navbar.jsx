@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
-import { AiOutlineSetting, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineSetting } from 'react-icons/ai';
 import { FaCalculator } from 'react-icons/fa';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import {Link} from 'react-router-dom'
+import Usermenu from './Usermenu';
 
 const Navbar = () => {
     const [rightSidebar, setRightSidebar] = useState(false);
@@ -82,21 +83,8 @@ const Navbar = () => {
                         onClick={() => setRightSidebar(true)}
                     >
                         <span className='px-1 text-1xl'><AiOutlineSetting /></span>
-                    </span>
-                    <span className='
-                    h-8 
-                    w-8 
-                    flex                      
-                    justify-center 
-                    bg-blue-900 mx-2 
-                    dark:bg-blue-600
-                    text-white 
-                    rounded-full
-                    items-center
-                    cursor-pointer                    
-                    '>
-                        <span className='px-1 text-1xl'><AiOutlineUser /></span>
-                    </span>
+                    </span>                   
+                    <Usermenu />
                 </div>
                 <div className={`fixed bg-white dark:bg-gray-700 ${!rightSidebar ? '-right-full' : 'right-0'}  top-0 h-full w-2/12 z-20 transition-all duration-300 pl-5 pt-5 ease-in-out`}>
                     <span className="text-3xl font-bold dark:text-gray-400">Me<span className="text-blue-900 dark:text-gray-300">Doc</span></span>

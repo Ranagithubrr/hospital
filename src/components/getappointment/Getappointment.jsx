@@ -12,6 +12,10 @@ import { AiOutlineDownload } from 'react-icons/ai';
 // import { useEffect } from 'react';
 import Paid from '../../img/paid.png';
 import html2canvas from 'html2canvas';
+import Box from '@mui/material/Box';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
 
 
 
@@ -71,21 +75,37 @@ const Getappointment = () => {
     // download receippt
     const captureScreenshot = () => {
         const elementToCapture = document.getElementById('element-id-to-capture');
-    
+
         if (elementToCapture) {
-          html2canvas(elementToCapture).then(canvas => {
-            const link = document.createElement('a');
-            link.href = canvas.toDataURL('image/png'); // Change to 'image/jpeg' for JPEG format
-            link.download = 'screenshot.png'; // Change the filename as needed
-            link.click();
-          });
+            html2canvas(elementToCapture).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png'); // Change to 'image/jpeg' for JPEG format
+                link.download = 'screenshot.png'; // Change the filename as needed
+                link.click();
+            });
         }
-      };
+    };
 
 
+    const steps = [
+        'Doctor Details',
+        'Appointment Details',
+        'Confirm Details',
+        'Pay Fees',
+        'Done'
+      ];
 
     return (
-        <div>
+        <div className='pt-10'>
+            <Box sx={{ width: '100%' }}>
+                <Stepper activeStep={step-1} alternativeLabel>
+                    {steps.map((label) => (
+                        <Step key={label}>
+                            <StepLabel>{label}</StepLabel>
+                        </Step>
+                    ))}
+                </Stepper>
+            </Box>
             {
                 step !== 4 ? step !== 5 ? <h4 className='font-semibold m-3'>Please fill out this steps bellow to continue</h4> : null : null
             }
@@ -118,9 +138,6 @@ const Getappointment = () => {
             </div>
             }
             {/* step 1 end */}
-
-
-
             {/* step 2 start */}
             {
                 step === 2 &&
