@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Rating from '@mui/material/Rating';
 import Singlereview from './Singlereview';
 import { Pagination } from '@mui/material';
 
 const Review = () => {
-    const [value, setValue] = useState(4.6);
+    // const [value, setValue] = useState(4.6);
+    const value = 4.6;
     return (
         <div className='pl-10 pt-5'>
             <h4 className='font-semibold text-xl'>Reviews</h4>

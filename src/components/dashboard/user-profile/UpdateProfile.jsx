@@ -1,6 +1,5 @@
 import React from 'react';
 import ProfilePic from '../../../img/docc.png'
-import { Link } from 'react-router-dom';
 
 const UpdateProfile = () => {
     return (

@@ -112,7 +112,7 @@ const Maindashboard = () => {
                     <h5 className='font-semibold pl-2'>Top Doctors</h5>
                     <ul className='mt-3 sticky top-32'>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -122,7 +122,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -132,7 +132,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -142,7 +142,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -152,7 +152,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -162,7 +162,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 
@@ -172,7 +172,7 @@ const Maindashboard = () => {
                             </a>
                         </li>
                         <li className='flex my-2 bg-gradient-to-r from-gray-200 to-blue-200 rounded py-1 px-3'>
-                            <a href="#" className='flex items-center no-underline w-full h-full'>
+                            <a href="/" className='flex items-center no-underline w-full h-full'>
                                 <img src={Doctor} alt="" className="h-8 w-8 bg-gradient-to-r from-blue-600 to-blue-900 rounded-full" />
                                 <div>
 

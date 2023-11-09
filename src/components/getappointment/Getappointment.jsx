@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import dayjs from 'dayjs';
+// import dayjs from 'dayjs';
 // import { CheckOut } from './Checkout';
 import StripeCheckout from 'react-stripe-checkout';
 import DatePicker from "react-datepicker";
 import { addDays, subDays, format } from 'date-fns';
 import "react-datepicker/dist/react-datepicker.css";
-import Logo from '../../img/logo.png';
+// import Logo from '../../img/logo.png';
 import { MdPayment } from 'react-icons/md';
 import { BsCalendarDate } from 'react-icons/bs';
 import { AiOutlineDownload } from 'react-icons/ai';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Paid from '../../img/paid.png';
 import html2canvas from 'html2canvas';
 
@@ -46,8 +46,8 @@ const Getappointment = () => {
 
     const nextClicked = () => {
         console.log(appointmentdetail);
-        if (step == 2) {
-            if (appointmentdetail.choosencategory != "" && appointmentdetail.appointment_date != "" && appointmentdetail.description != "") {
+        if (step === 2) {
+            if (appointmentdetail.choosencategory !== "" && appointmentdetail.appointment_date !== "" && appointmentdetail.description !== "") {
                 step < 4 && setstep(step + 1)
             } else {
                 console.log('please fill all the field');
@@ -326,7 +326,7 @@ const Getappointment = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={Paid} alt="paid image" className='m-auto h-40' />
+                            <img src={Paid} alt="paid" className='m-auto h-40' />
                         </div>
                         <div className='py-5'>
                             <span className='font-semibold text-gray-600 block m-auto text-center'>Thanks for using MeDoc</span>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiOutlineHome, AiOutlineSchedule, AiFillStar } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 import { MdDashboardCustomize, MdOutlineLogout } from 'react-icons/md';
 import { HiUserAdd } from 'react-icons/hi';
 import { BsCalendarDate, BsHospitalFill, BsCurrencyDollar, BsFillChatDotsFill } from 'react-icons/bs';

@@ -1,14 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Sidebar from './components/sidebar/Sidebar';
-import { Route, Router, Routes } from 'react-router';
+import { Route, Routes } from 'react-router';
 import Homepage from './pages/Home/Homepage';
 import Appointment from './pages/Appointment/Appointment';
 import Login from './pages/Login/Login';
 import Patients from './components/dashboard/pateints/Patients';
 import Review from './components/dashboard/review/Review';
-import Schedule from './pages/calculators/Calculators';
 import Dashboard from './components/dashboard/Dashboard';
 import Profile from './components/dashboard/profile/Profile';
 import Maindashboard from './components/dashboard/maindash/Maindashboard';

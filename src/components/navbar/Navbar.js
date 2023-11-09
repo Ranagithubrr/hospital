@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AiOutlineHome, AiOutlineSchedule } from 'react-icons/ai';
-import { MdOutlineTimer } from 'react-icons/md';
+import { AiOutlineHome } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { AiOutlineSetting, AiOutlineUser } from 'react-icons/ai';
 import { FaCalculator } from 'react-icons/fa';
