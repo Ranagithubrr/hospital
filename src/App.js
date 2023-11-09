@@ -22,6 +22,7 @@ import Getappointment from './components/getappointment/Getappointment';
 import Hospitalsurvey from './pages/Hospital-Survey/Hospitalsurvey';
 import Accountreview from './pages/Accounts-Review/Accountreview';
 import Earnings from './pages/Earnings/Earnings';
+import Chat from './pages/chat/Chat';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<Dashboard />}>
             <Route path='/' element={<Maindashboard />}></Route>
             <Route path='/patients' element={<Patients />}></Route>
+            <Route path='/chat' element={<Chat />}></Route>
             <Route path='/accounts-review' element={<Accountreview />}></Route>
             <Route path='/review' element={<Review />}></Route>
             <Route path='/doctors' element={<Profile />}></Route>
