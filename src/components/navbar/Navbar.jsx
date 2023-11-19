@@ -73,7 +73,7 @@ const Navbar = () => {
                     w-8 
                     flex                      
                     justify-center 
-                    bg-blue-900 mx-2 
+                    bg-gray-400 mx-2 
                     dark:bg-blue-600
                     text-white 
                     rounded-full
